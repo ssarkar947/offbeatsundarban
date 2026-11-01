@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const MIME_TYPES = {
   '.html': 'text/html',
   '.css': 'text/css',
@@ -13,7 +13,8 @@ const MIME_TYPES = {
   '.jpeg': 'image/jpeg',
   '.png': 'image/png',
   '.svg': 'image/svg+xml',
-  '.webp': 'image/webp'
+  '.webp': 'image/webp',
+  '.ico': 'image/x-icon'
 };
 
 const server = http.createServer((req, res) => {
@@ -41,10 +42,16 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, () => {
   console.log(`====================================================`);
   console.log(`🌿 Offbeat Sundarban Tour Web Server Running!`);
-  console.log(`👉 Open in your browser: http://localhost:${PORT}`);
+  console.log(`👉 Server active on port: ${PORT}`);
   console.log(`====================================================`);
-  
-  // Attempt to open default browser automatically
-  const startCmd = process.platform === 'win32' ? 'start' : process.platform === 'darwin' ? 'open' : 'xdg-open';
-  exec(`${startCmd} http://localhost:${PORT}`);
+
+  // Open browser only when running locally, not in cloud/headless production
+  if (!process.env.PORT && process.env.NODE_ENV !== 'production') {
+    try {
+      const startCmd = process.platform === 'win32' ? 'start' : process.platform === 'darwin' ? 'open' : 'xdg-open';
+      exec(`${startCmd} http://localhost:${PORT}`);
+    } catch (e) {
+      // Ignore in headless environments
+    }
+  }
 });
