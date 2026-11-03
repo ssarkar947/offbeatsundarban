@@ -115,7 +115,7 @@ function initWildlifeFilter() {
   });
 }
 
-/* Interactive Expedition Calculator: Base Rate ₹3500 & Subjective Photo Tour */
+/* Interactive Expedition Calculator: Base Rate ₹4299 & Subjective Photo Tour */
 function initTripCalculator() {
   const packageSelect = document.getElementById('calc-package');
   const guestsInput = document.getElementById('calc-guests');
@@ -136,8 +136,8 @@ function initTripCalculator() {
     const guests = Math.max(1, parseInt(guestsInput.value) || 1);
 
     if (packageType === 'unexplored') {
-      // Base rate: ₹3,500 per guest for 3D/2N
-      const baseRatePerPerson = 3500;
+      // Base rate: ₹4,299 per guest for complete 3D/2N Tiger Reserve tour
+      const baseRatePerPerson = 4299;
       let addOns = 0;
 
       if (kolkataPickupCheck && kolkataPickupCheck.checked) {
@@ -152,7 +152,7 @@ function initTripCalculator() {
 
       const grandTotal = (baseRatePerPerson * guests) + addOns;
 
-      if (basePricePerPersonSpan) basePricePerPersonSpan.textContent = `₹3,500`;
+      if (basePricePerPersonSpan) basePricePerPersonSpan.textContent = `₹4,299`;
       if (guestsCountSpan) guestsCountSpan.textContent = guests.toString();
       if (addOnsSpan) addOnsSpan.textContent = `₹${addOns.toLocaleString('en-IN')}`;
       if (grandTotalSpan) grandTotalSpan.textContent = `₹${grandTotal.toLocaleString('en-IN')}`;
@@ -193,7 +193,7 @@ function initBookingForm() {
   const closeModalBtn = document.querySelector('.modal-close-btn');
 
   function getFormData() {
-    const pkg = document.getElementById('calc-package')?.selectedOptions[0]?.text || '3D/2N Untamed Frontier (₹3,500/guest)';
+    const pkg = document.getElementById('calc-package')?.selectedOptions[0]?.text || 'Complete 3D/2N Tiger Reserve Tour (₹4,299/guest)';
     const guests = document.getElementById('calc-guests')?.value || '2';
     const name = document.getElementById('book-name')?.value || 'Guest';
     const phone = document.getElementById('book-phone')?.value || '';
@@ -246,7 +246,7 @@ function initBookingForm() {
             <p style="margin-bottom: 0.75rem;"><strong>Thanks, ${d.name}!</strong> We have received your trip inquiry for <strong>${d.pkg}</strong> (${d.guests} people).</p>
             <p style="font-size: 0.9rem; color: #555; margin-bottom: 1rem;">We'll call or WhatsApp you directly at <strong>${d.phone || d.email}</strong> shortly to discuss your preferred dates (around <strong>${d.travelDate}</strong>) and answer any questions you have.</p>
             <div style="background: #fbf9f4; border: 1px solid #ebe2d3; padding: 12px; border-radius: 8px; font-size: 0.85rem; text-align: left;">
-              <strong>Tour Highlights:</strong> Pickup from Canning &rarr; Dhamakhali boat cruise, Burirdabri watchtower & mudwalk (with view of Bangladesh), Morichjhapi, Harikhali, Jhingakhali, and fresh food cooked on the boat.
+              <strong>Complete Tiger Reserve Route:</strong> Canning pickup &rarr; Dhamakhali &rarr; Bird Forest, Hemnagar Port & Zero Point &rarr; Deep Forest (Jhingakhali, Burirdabri with Bangladesh view, Morichjhapi, Arbesia, Khatuajhuri, Gapbani) &rarr; Safari Watchtowers (Sajnekhali, Sudhanyakhali, Bonbibi Bharani, Sarakkhali) &rarr; Godkhali return.
             </div>
           `;
         }
