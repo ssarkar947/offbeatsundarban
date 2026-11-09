@@ -14,6 +14,7 @@ Official website for **Offbeat Sundarban Tour** — a quiet, authentic journey t
 - **Wildlife & Birding Photography Tours**: Custom trips planned around golden light and low tides with low-vibration idling and beanbag camera supports.
 - **Local Biodiversity Guides & Storytellers**: Travel with boatmen and guides who grew up in the delta, know bird calls, track pugmarks on the mudflats, and share local folklore of Ma Bonbibi.
 - **Direct Contact & WhatsApp**: **+91 7384593640**
+- **Meta / Facebook Lead Ads Compliant Privacy Policy**: Included at `privacy-policy.html` (covers lead generation disclosures, zero spam commitment, and opt-out rights).
 
 ---
 
