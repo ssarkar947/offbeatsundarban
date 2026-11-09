@@ -6,7 +6,7 @@ Official website for **Offbeat Sundarban Tour** — a quiet, authentic journey t
 
 ## 🌿 Overview & Highlights
 
-- **The Complete Sundarban Tiger Reserve Tour (₹4,299 per person)**:
+- **The Complete Sundarban Tiger Reserve Tour (₹3,999 per person)**:
   - **Day 1: Riverside Villages & Island Exploration**: Pickup from Canning &rarr; transfer to Dhamakhali &rarr; board the boat to visit Sundarban Village, Bird Forest, Hemnagar Ship Port, and Zero Point. Overnight stay in a clean riverside hotel.
   - **Day 2: Deep Forest Exploration**: Early morning departure to Jhingakhali Watch Tower, Burirdabri Watch Tower (with panoramic views of the Bangladesh forest across the Raimangal river), Morichjhapi Forest, Arbesia Forest, Khatuajhuri Forest, and Gapbani Forest.
   - **Day 3: Watch Towers & Forest Safari**: Sajnekhali Watch Tower, Sudhanyakhali Watch Tower, Bonbibi Bharani, and Sarakkhali Forest. Conclude at Godkhali, completing the full cross-delta Tiger Reserve route.
